@@ -2,12 +2,14 @@ text = open("book.txt", "r")
 
 d = dict() 
 
-for line in text: 
-    line = line.lower()
+for data in text: 
+    data = data.lower()
 
-    line = line.strip()
+    data = data.strip()
 
-   words = line.split(" ")
+
+
+    words = data.split(" ")
 	
     for word in words:
         if word in d:            
